@@ -1,0 +1,5 @@
+pip install -r requirements.txt
+cd C:\Users\vic07\Music\Estudos\movie-recommendation-app-repo-main\src
+python preprocess.py
+python get_for_you_recommendations.py
+streamlit run main.py
