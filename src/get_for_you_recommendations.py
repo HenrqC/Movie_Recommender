@@ -14,7 +14,7 @@ def get_for_you_recommendations(df, tfidf_matrix, top_n=10):
     # Mean → convert to array → flatten to 1D
     user_profile_vector = np.asarray(tfidf_matrix[selected_indices].mean(axis=0)).flatten()
 
-    # ✅ Now define sim_scores (it was missing in your code!)
+    # Now define sim_scores (it was missing in your code!)
     sim_scores = cosine_similarity([user_profile_vector], tfidf_matrix).flatten()
 
     # Sort scores descending and remove already seen movies
