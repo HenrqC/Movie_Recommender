@@ -45,7 +45,7 @@ if st.button("🚀 Recommend Similar Movies"):
                         st.markdown(f"### {movie_title}")
                         st.markdown(f"*{plot}*" if plot != "N/A" else "_Plot not available_")
 
-    # ✅ FOR YOU RECOMMENDATIONS — show AFTER a search
+    # FOR YOU RECOMMENDATIONS — show AFTER a search
     st.subheader("🎯 For You Recommendations")
     for_you = get_for_you_recommendations(df, tfidf_matrix)
     if for_you is None or for_you.empty:
